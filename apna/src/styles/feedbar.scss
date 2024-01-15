@@ -1,0 +1,98 @@
+//feedback section
+.feeb_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > h2 {
+    color: rgba(0, 0, 0, 0.957);
+    position: relative;
+    letter-spacing: 3px;
+    font-weight: 400;
+    top: 2vw;
+    text-transform: uppercase;
+  }
+}
+
+.task_container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: 2.5rem;
+  > form {
+    display: flex;
+    margin-top: 2rem;
+    gap: 10px;
+    flex-direction: column;
+    > input {
+      user-select: none;
+      border: 1px solid darkcyan;
+      padding: 13px;
+      width: 600px;
+      outline: 0;
+      border-radius: 4px;
+      transition: all 0.5s;
+      &:hover {
+        background-color: rgba(245, 245, 245, 0.95);
+      }
+    }
+
+    > textarea {
+      user-select: none;
+      border: 1px solid darkcyan;
+      padding: 13px;
+      width: 600px;
+      height: 16vh;
+      outline: 0;
+      border-radius: 4px;
+      transition: all 0.5s;
+      &:hover {
+        background-color: rgba(245, 245, 245, 0.95);
+      }
+    }
+    > button {
+      border-radius: 4px;
+      padding: 13px;
+      border: 0;
+      outline: 0;
+      color: white;
+      background-color: black;
+      cursor: pointer;
+      .icon {
+        font-weight: 800;
+        font-size: 1rem;
+      }
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.03);
+        background-color: rgb(72, 72, 220);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .feeb_text {
+    margin-top: 4rem;
+    >h2{
+      position: relative;
+      top: 5vh;
+    }
+  }
+  .task_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > form {
+      > input {
+        width: 300px;
+      }
+
+      > textarea {
+        width: 300px;
+      }
+    }
+  }
+}

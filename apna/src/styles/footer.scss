@@ -1,0 +1,12 @@
+.footer{
+    height: 7vh;
+    margin-top: 7rem;
+    display: grid;
+    place-content: center;
+    background-color: #101828;
+    >h2{
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+}
